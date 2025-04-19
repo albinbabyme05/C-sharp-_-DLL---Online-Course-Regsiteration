@@ -11,13 +11,17 @@ namespace Online_Course_Registration_System.User
         private string Name { get; set; }
         private string Email { get; set; }
 
-        
-
+        //constructor
         public User(string name, string email)
         {
             Name = name;
             Email = email;
         }
+
+        public void SetName(string name) { Name = name; }
+        public string GetName() => Name;
+
+        public string GetEmail() => Email;
     }
 
     
