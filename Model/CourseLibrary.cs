@@ -30,6 +30,6 @@ namespace Online_Course_Registration_System.Model
         public String GetTitle() => Title;
         public string GetInstructor() => Instructor;
         public Guid GetCourseId() => CourseId;
-      
+  
     }
 }
