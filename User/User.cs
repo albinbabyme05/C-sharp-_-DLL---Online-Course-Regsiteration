@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Online_Course_Registration_System.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace Online_Course_Registration_System.User
 {
-    internal class User
+    public abstract class User
     {
         private string Name { get; set; }
         private string Email { get; set; }
 
-        //constructor
         public User(string name, string email)
         {
             Name = name;
@@ -22,7 +22,8 @@ namespace Online_Course_Registration_System.User
         public string GetName() => Name;
 
         public string GetEmail() => Email;
-    }
 
-    
+        public abstract string RegsiterCourse(CourseLibrary course);
+
+    }  
 }
