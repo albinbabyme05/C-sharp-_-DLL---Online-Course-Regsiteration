@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Online_Course_Registration_System.Model
 {
-    internal class CourseLibrary
+    public class CourseLibrary
     {
         private Guid CourseId;
         private string Title;
@@ -27,9 +27,9 @@ namespace Online_Course_Registration_System.Model
             Console.WriteLine($"Course: {Title} - Id: {CourseId} - Teacher: {Instructor} -Duration:{Duration}");
         }
 
-        public virtual bool Enroll(User user) 
-        {
-            return IsAvailable = true;
-        }
+        public String GetTitle() => Title;
+        public string GetInstructor() => Instructor;
+        public Guid GetCourseId() => CourseId;
+      
     }
 }
