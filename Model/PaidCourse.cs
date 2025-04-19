@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Online_Course_Registration_System.Model
+{
+    public class PaidCourse : CourseLibrary
+    {
+        private double Price;
+        private double WalletBalance;
+        public PaidCourse(string title, string instructor, double price) : base(title, instructor)
+        {
+            Price = price;
+            WalletBalance = 0;
+        }
+
+        public double GetWalletBalance() => WalletBalance;
+        public void SetWalletBalance(double walletbalance) { WalletBalance = walletbalance; }
+
+        public double GetPrice() => Price;
+        public void SetPrice(double price) { Price = price; }
+    }
+}
