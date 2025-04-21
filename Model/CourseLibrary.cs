@@ -15,11 +15,12 @@ namespace Online_Course_Registration_System.Model
         public string Duration;
         public bool IsAvailable;
 
-        public CourseLibrary(string title, string instructor)
+        public CourseLibrary(string title, string instructor, string duration)
         {
             Title = title;
             Instructor = instructor;
             CourseId = Guid.NewGuid();
+            Duration = duration;
         }
 
         public void GetCourseInfo()
@@ -27,7 +28,7 @@ namespace Online_Course_Registration_System.Model
             Console.WriteLine($"Course: {Title} - Id: {CourseId} - Teacher: {Instructor} -Duration:{Duration}");
         }
 
-        public String GetTitle() => Title;
+        public string GetTitle() => Title;
         public string GetInstructor() => Instructor;
         public Guid GetCourseId() => CourseId;
   
