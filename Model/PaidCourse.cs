@@ -9,7 +9,10 @@ namespace Online_Course_Registration_System.Model
     public class PaidCourse : CourseLibrary
     {
         private double Price;
+
         public PaidCourse(string title, string instructor, string duration, double price) : base(title, instructor, duration)
+
+   
         {
             Price = price; 
         }
