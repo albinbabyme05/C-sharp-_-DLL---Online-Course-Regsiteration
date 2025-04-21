@@ -13,8 +13,18 @@ namespace Online_Course_Registration_System.User
         private Guid UserId { get; set; }
         public RegisteredUser(string name, string email) : base(name, email)
         {
-            WalletBalance = 0;
+            WalletBalance = 100;
             UserId = Guid.NewGuid();
+        }
+
+        public void AddBalance(double amount)
+        {
+            WalletBalance += amount;
+        }
+
+        public double GetBalance()
+        {
+            return WalletBalance;
         }
 
         public double GetWalletBalance() => WalletBalance;
