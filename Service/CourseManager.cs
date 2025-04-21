@@ -41,5 +41,10 @@ namespace Online_Course_Registration_System.Service
             }
             return freeCourseList;
         }
+
+        public List<CourseLibrary> DisplayAllCourse()
+        {
+            return new List<CourseLibrary>(courseList);
+        }
     }
 }
