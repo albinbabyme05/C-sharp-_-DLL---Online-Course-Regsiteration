@@ -48,6 +48,10 @@ The project demonstrates key OOP concepts such as:
 └── CourseApp               # Console app that uses DLL
     └── Program.cs
 ```
+## 🚀 GUI
+![1](https://github.com/user-attachments/assets/597d6fb6-9b43-4fc4-a794-e8d2e59f3364)
+![2](https://github.com/user-attachments/assets/137e2710-5e3e-4165-bbb6-54073447a738)
+
 
 ---
 
@@ -60,8 +64,4 @@ The project demonstrates key OOP concepts such as:
 
 ---
 
-## 🔄 Next Steps (Ideas)
 
-- Add admin roles to manage courses
-- Store course/user data in files or a database
-- Create a simple UI using WinForms or WPF
